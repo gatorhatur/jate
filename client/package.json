@@ -1,5 +1,10 @@
 {
   "name": "JATE",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "16.16.0"
+  },
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack --mode production",
