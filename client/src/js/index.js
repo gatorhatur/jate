@@ -8,7 +8,7 @@ const main = document.querySelector('#main');
 main.innerHTML = '';
 
 window.addEventListener('load', function () {
-  document.querySelector('#logo') = logo;
+  document.getElementById('logo').src = logo;
 })
 
 const loadSpinner = () => {
