@@ -2,9 +2,14 @@ import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
 import '../css/style.css';
+import logo from '../images/logo.png';
 
 const main = document.querySelector('#main');
 main.innerHTML = '';
+
+window.addEventListener('load', function () {
+  document.querySelector('#logo') = logo;
+})
 
 const loadSpinner = () => {
   const spinner = document.createElement('div');
