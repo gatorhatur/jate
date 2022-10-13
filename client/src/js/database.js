@@ -17,7 +17,7 @@ export const putDb = async (content) => {
    const db = await openDB('jate', 1);
       const tx = db.transaction('jate', 'readwrite');
     const store = tx.objectStore('jate');
-    const request = store.put({content},1);
+  const request = store.put({ content: content, id: 1 });
   const result = await request;
   console.log('IndexDB has been updated')
 };
@@ -35,7 +35,7 @@ export const getDb = async () => {
   if (result.length < 1) {
     return false;
   }
-    return result[0];
+  return result[0].content;
 };
 
 initdb();
